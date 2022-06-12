@@ -3,12 +3,15 @@
 <head>
 <meta name="description" content="Virtual Tour"/>
 <script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-116087-3", "auto"); ga("send", "pageview");</script>
-    <title>Untitled 30</title>
+<meta itemprop="name" content="STARI GRAD APT"/><meta itemprop="description" content="Virtual Tour"/><meta itemprop="image" content="https://ivan933.github.io/Stari-Grad-Apartment/socialThumbnail.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="STARI GRAD APT"/><meta name="twitter:description" content="Virtual Tour"/><meta name="twitter:url" content="https://ivan933.github.io/Stari-Grad-Apartment/index.htm"/><meta name="twitter:image:src" content="https://ivan933.github.io/Stari-Grad-Apartment/socialThumbnail.jpg"/><meta name="twitter:image:width" content="1200"/><meta name="twitter:image:height" content="630"/>
+<meta property="og:title" content="STARI GRAD APT" /><meta property="og:type" content="website" /><meta property="og:description" content="Virtual Tour" /><meta property="og:url" content="https://ivan933.github.io/Stari-Grad-Apartment/index.htm" /><meta property="og:image" content="https://ivan933.github.io/Stari-Grad-Apartment/socialThumbnail.jpg" /><meta property="og:image:width" content="1200" /> <meta property="og:image:height" content="630" /><meta property="fb:app_id" content="817622095004141" /><link rel="image_src" href="https://ivan933.github.io/Stari-Grad-Apartment/socialThumbnail.jpg">
+    <title>STARI GRAD APT</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="user-scalable=no, initial-scale=0.5, width=device-width, viewport-fit=cover" />
     
     <script src="lib/tdvplayer.js"></script>
-    <script src="script.js?v=1653835967102"></script>
+    <script src="script.js?v=1655055117708"></script>
     <script src="lib/ThreeWebGL.js"></script>
     <script type="text/javascript">
         var player;
@@ -43,9 +46,9 @@
             };
 
             var settings = new TDV.PlayerSettings();
-            
+            settings.set(TDV.PlayerSettings.ACTIVE_VIDEO_ELEMENT, document.getElementById("video_576F756F_58E4_1CA3_41CE_174659D89356"));
             settings.set(TDV.PlayerSettings.CONTAINER, document.getElementById('viewer'));
-            settings.set(TDV.PlayerSettings.SCRIPT_URL, 'script.js?v=1653835967102');
+            settings.set(TDV.PlayerSettings.SCRIPT_URL, 'script.js?v=1655055117708');
             settings.set(TDV.PlayerSettings.FLASH_EXPRESS_INSTALLER_URL, 'lib/ExpressInstall.swf');
             settings.set(TDV.PlayerSettings.FLASH_AUDIO_PLAYER_URL, 'lib/AudioPlayer.swf');
             settings.set(TDV.PlayerSettings.FLASH_PANORAMA_PLAYER_URL, 'lib/PanoramaRenderer.swf');
@@ -149,7 +152,7 @@
             var transitionEnd = transitionEndEventName();
             var preloadContainer = document.getElementById('preloadContainer');
 
-            
+            document.getElementById("video_576F756F_58E4_1CA3_41CE_174659D89356").pause();
 
             var transitionEndName = transitionEndEventName();
             if(transitionEndName)
@@ -203,7 +206,8 @@
                 return;
             }
 
-            showPreloader();
+            playVideo(document.getElementById("video_576F756F_58E4_1CA3_41CE_174659D89356"));
+showPreloader();
 loadTour()
         }
 
@@ -263,7 +267,7 @@ loadTour()
     
 </head>
 <body onload="onLoad()">
-    <div id="preloadContainer" style="background-color:rgba(255,255,255,1)"><div style="z-index: 4; position: absolute; background-image: url('loading/HTMLImage_1B93DF22_104A_4A6A_41A6_84502FAC4754.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center; overflow: hidden; left: 0%; top: 0%; width: 100.00%; height: 100.00%"></div><div style="z-index: 5; position: absolute; background-image: url('loading/HTMLImage_1B60A850_104A_3625_41AC_2EBEA1377EBE.gif'); background-size: contain; background-repeat: no-repeat; background-position: center center; overflow: hidden; right: 34.65709728867626%; bottom: 41.812865497076025%; width: 26.89%; height: 7.02%"></div><div style="z-index: 6; position: absolute; background-image: url('loading/HTMLImage_1AA7D8F4_104E_37EC_41A9_D7FFC7BDDE44.png'); background-size: contain; background-repeat: no-repeat; background-position: center center; overflow: hidden; right: 24.210526315789465%; bottom: 25.643274853801174%; width: 48.26%; height: 9.94%"></div><div style="z-index: 7; position: absolute; right: 11.58%; bottom: 24.04%; width: 7.97%; height: 7.31%"><div style="text-align:left; color:#000; "><p STYLE="margin:0; line-height:12px;"><BR STYLE="letter-spacing:0px;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;"/></p></div></div></div>
+    <div id="preloadContainer" style="background-color:rgba(255,255,255,1)"><div style="z-index: 4; position: absolute; display: flex; align-items: center; text-align: center; overflow: hidden; background-color: #FFFFFF; left: 0%; top: 0%; width: 100.00%; height: 100.00%"><video id="video_576F756F_58E4_1CA3_41CE_174659D89356" width="100%" height="100%" loop autoplay playsinline webkit-playsinline poster="media/video_576F756F_58E4_1CA3_41CE_174659D89356_poster.jpg" preload="auto"><source src="media/video_576F756F_58E4_1CA3_41CE_174659D89356.mp4" type="video/mp4">Your browser does not support the video tab</video></div><div style="z-index: 5; position: absolute; background-image: url('loading/HTMLImage_1B60A850_104A_3625_41AC_2EBEA1377EBE.gif'); background-size: contain; background-repeat: no-repeat; background-position: center center; overflow: hidden; right: 34.66%; bottom: 41.81%; width: 26.89%; height: 7.02%"></div><div style="z-index: 6; position: absolute; background-image: url('loading/HTMLImage_1AA7D8F4_104E_37EC_41A9_D7FFC7BDDE44.png'); background-size: contain; background-repeat: no-repeat; background-position: center center; overflow: hidden; right: 24.21%; bottom: 25.64%; width: 48.26%; height: 9.94%"></div><div style="z-index: 7; position: absolute; right: 11.58%; bottom: 24.04%; width: 7.97%; height: 7.31%"><div style="text-align:left; color:#000; "><p STYLE="margin:0; line-height:12px;"><BR STYLE="letter-spacing:0px;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;"/></p></div></div></div>
     <div id="viewer"></div>
 </body>
 </html>
